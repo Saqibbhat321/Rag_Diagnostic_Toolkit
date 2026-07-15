@@ -22,7 +22,7 @@ explanation on top of the rule-based label -- see explain_with_llm().
 import os
 from src.embed_index import search
 
-LOW_CONFIDENCE_THRESHOLD = 0.45
+LOW_CONFIDENCE_THRESHOLD = 0.5
 
 
 def classify_result(query_obj, retrieved):

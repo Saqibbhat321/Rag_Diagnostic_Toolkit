@@ -88,9 +88,9 @@ def chunk_whole_document(doc):
 
 
 STRATEGIES = {
-    "fixed_size": lambda doc: chunk_fixed_size(doc, chunk_size=200),
-    "fixed_overlap": lambda doc: chunk_fixed_overlap(doc, chunk_size=200, overlap=50),
-    "sentence_based": lambda doc: chunk_sentence_based(doc, sentences_per_chunk=3),
+    "fixed_size": lambda doc: chunk_fixed_size(doc, chunk_size=120),
+    "fixed_overlap": lambda doc: chunk_fixed_overlap(doc, chunk_size=120, overlap=30),
+    "sentence_based": lambda doc: chunk_sentence_based(doc, sentences_per_chunk=2),
     "whole_document": lambda doc: chunk_whole_document(doc),
 }
 
