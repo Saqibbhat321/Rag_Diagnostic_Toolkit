@@ -44,7 +44,55 @@
     "expected_doc_id": "doc_011"
   },
   {
-    "query": "What is the cache-aside pattern in Redis?",
+    "query": "What is the cache-aside pattern and how does TTL prevent stale entries?",
     "expected_doc_id": "doc_012"
+  },
+  {
+    "query": "Why does Memcached not support persistence or complex data structures like sorted sets?",
+    "expected_doc_id": "doc_013"
+  },
+  {
+    "query": "Why can a high connection pool size overwhelm a MySQL server despite pooling?",
+    "expected_doc_id": "doc_014"
+  },
+  {
+    "query": "Why doesn't depends_on in Docker Compose guarantee a dependent service is fully ready?",
+    "expected_doc_id": "doc_015"
+  },
+  {
+    "query": "How does Adam's bias-correction step counteract moving averages initialized at zero?",
+    "expected_doc_id": "doc_016"
+  },
+  {
+    "query": "Why does HNSW not require a training or clustering step before search, unlike IVF-based indices?",
+    "expected_doc_id": "doc_017"
+  },
+  {
+    "query": "How does a Kubernetes Service handle traffic when pod IPs are ephemeral?",
+    "expected_doc_id": "doc_018"
+  },
+  {
+    "query": "Why do asynchronous queue messages cause incomplete distributed traces?",
+    "expected_doc_id": "doc_019"
+  },
+  {
+    "query": "Why can over-indexing a table slow down write-heavy workloads?",
+    "expected_doc_id": "doc_020"
+  },
+  {
+    "query": "Which caching system is multithreaded and can better use multi-core machines for a single instance?",
+    "expected_doc_id": "doc_013"
+  },
+  {
+    "query": "Which connection pool library is described as one of the fastest, using a lightweight low-locking design?",
+    "expected_doc_id": "doc_014"
+  },
+  {
+    "query": "At what sampling rate are critical operations like checkout flows typically traced in production?",
+    "expected_doc_id": "doc_019"
+  },
+  {
+    "query": "Which vector search approach uses graph traversal from a top-layer entry point down to the bottom layer?",
+    "expected_doc_id": "doc_017"
   }
 ]
