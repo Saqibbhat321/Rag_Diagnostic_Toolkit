@@ -4,35 +4,35 @@
       "query": "How do containers on the same network find each other by name instead of IP?",
       "expected_doc_id": "doc_001",
       "label": "SUCCESS",
-      "top_score": 0.6775584816932678,
-      "matched_chunk_text": "olve each other's names automatically through Docker's built-in DNS server. This is different from the default bridge network, which does not support automatic DNS resolution between containers. If yo",
-      "matched_score": 0.6775584816932678,
+      "top_score": 0.6492144465446472,
+      "matched_chunk_text": "ainers on a user-defined network can resolve each other's names automatically through Docker's built-in DNS server. This",
+      "matched_score": 0.6492144465446472,
       "retrieved_doc_ids": [
         "doc_001",
         "doc_001",
-        "doc_001"
+        "doc_018"
       ]
     },
     {
       "query": "What is the difference between session pooling and transaction pooling in PgBouncer?",
       "expected_doc_id": "doc_002",
-      "label": "SUCCESS",
-      "top_score": 0.5355638265609741,
-      "matched_chunk_text": "session pooling, transaction pooling, and statement pooling. Transaction pooling is the most commonly used mode in production because it releases the connection back to the pool as soon as a transact",
-      "matched_score": 0.5355638265609741,
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.8321940898895264,
+      "matched_chunk_text": "PgBouncer supports three pooling modes: session pooling, transaction pooling, and statement pooling. Transaction poolin",
+      "matched_score": 0.8321940898895264,
       "retrieved_doc_ids": [
         "doc_002",
         "doc_002",
-        "doc_002"
+        "doc_014"
       ]
     },
     {
       "query": "How does FastAPI resolve dependencies that depend on other dependencies?",
       "expected_doc_id": "doc_003",
       "label": "SUCCESS",
-      "top_score": 0.8031027317047119,
-      "matched_chunk_text": "ting your endpoint. Dependencies can themselves depend on other dependencies, forming a chain that FastAPI resolves automatically. This pattern is commonly used for authentication, database session ma",
-      "matched_score": 0.8031027317047119,
+      "top_score": 0.7765814065933228,
+      "matched_chunk_text": "fine a dependency as a function, and FastAPI automatically calls it before executing your endpoint. Dependencies can the",
+      "matched_score": 0.7765814065933228,
       "retrieved_doc_ids": [
         "doc_003",
         "doc_003",
@@ -43,9 +43,9 @@
       "query": "What happens if the learning rate in gradient descent is too high?",
       "expected_doc_id": "doc_004",
       "label": "SUCCESS",
-      "top_score": 0.5173139572143555,
-      "matched_chunk_text": "function with respect to the model parameters, then updates the parameters by subtracting a fraction of this gradient. The fraction is controlled by the learning rate. If the learning rate is too lar",
-      "matched_score": 0.5173139572143555,
+      "top_score": 0.5954680442810059,
+      "matched_chunk_text": "ng rate. If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge. If it is too s",
+      "matched_score": 0.5954680442810059,
       "retrieved_doc_ids": [
         "doc_004",
         "doc_004",
@@ -56,9 +56,9 @@
       "query": "Which FAISS index type uses product quantization to save memory?",
       "expected_doc_id": "doc_005",
       "label": "SUCCESS",
-      "top_score": 0.6143156290054321,
-      "matched_chunk_text": "FAISS provides several index types for different tradeoffs between search speed, memory usage, and accuracy. The simplest index, IndexFlatL2, performs an exhaustive search by comparing the query vecto",
-      "matched_score": 0.6143156290054321,
+      "top_score": 0.6579141616821289,
+      "matched_chunk_text": "FAISS provides several index types for different tradeoffs between search speed, memory usage, and accuracy. The simples",
+      "matched_score": 0.6579141616821289,
       "retrieved_doc_ids": [
         "doc_005",
         "doc_005",
@@ -68,10 +68,10 @@
     {
       "query": "How can I compare metrics across multiple training runs in MLflow?",
       "expected_doc_id": "doc_006",
-      "label": "SUCCESS",
-      "top_score": 0.7270265221595764,
-      "matched_chunk_text": "sion if you are using git. The MLflow UI provides a way to visually compare metrics across multiple runs, which is useful when tuning hyperparameters. Artifacts such as trained models, plots, and conf",
-      "matched_score": 0.7270265221595764,
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.630861759185791,
+      "matched_chunk_text": "low.log_param and mlflow.log_metric within your training script. MLflow automatically records the start and end time of",
+      "matched_score": 0.630861759185791,
       "retrieved_doc_ids": [
         "doc_006",
         "doc_006",
@@ -81,10 +81,10 @@
     {
       "query": "What algorithm refills tokens at a fixed rate to control API request limits?",
       "expected_doc_id": "doc_007",
-      "label": "SUCCESS",
-      "top_score": 0.7698493599891663,
-      "matched_chunk_text": "Rate limiting protects an API from being overwhelmed by too many requests in a short period. The token bucket algorithm is one of the most widely used approaches: each client is allocated a bucket tha",
-      "matched_score": 0.7698493599891663,
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.8011400699615479,
+      "matched_chunk_text": "Rate limiting protects an API from being overwhelmed by too many requests in a short period. The token bucket algorithm",
+      "matched_score": 0.8011400699615479,
       "retrieved_doc_ids": [
         "doc_007",
         "doc_007",
@@ -95,9 +95,9 @@
       "query": "Why shouldn't I use raw BERT embeddings for cosine similarity search?",
       "expected_doc_id": "doc_008",
       "label": "SUCCESS",
-      "top_score": 0.5923606157302856,
-      "matched_chunk_text": "ot well-suited for direct comparison using cosine similarity, Sentence Transformers use a siamese network structure during training to optimize embeddings for this exact use case. Popular models like",
-      "matched_score": 0.5923606157302856,
+      "top_score": 0.6578189134597778,
+      "matched_chunk_text": "nces are close together in vector space. Unlike raw BERT embeddings, which are not well-suited for direct comparison usi",
+      "matched_score": 0.6578189134597778,
       "retrieved_doc_ids": [
         "doc_008",
         "doc_008",
@@ -107,10 +107,10 @@
     {
       "query": "How do taints and tolerations affect where a pod gets scheduled?",
       "expected_doc_id": "doc_009",
-      "label": "SUCCESS",
-      "top_score": 0.7866801023483276,
-      "matched_chunk_text": "n the presence of other pods. Taints are applied to nodes to repel pods that do not have a matching toleration, which is commonly used to reserve nodes for specific workloads. If the scheduler cannot",
-      "matched_score": 0.7866801023483276,
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.6987780332565308,
+      "matched_chunk_text": "anti-affinity control scheduling based on the presence of other pods. Taints are applied to nodes to repel pods that do",
+      "matched_score": 0.6987780332565308,
       "retrieved_doc_ids": [
         "doc_009",
         "doc_009",
@@ -121,9 +121,9 @@
       "query": "Why can accuracy be a misleading metric when classes are imbalanced?",
       "expected_doc_id": "doc_010",
       "label": "SUCCESS",
-      "top_score": 0.629484236240387,
-      "matched_chunk_text": "Class imbalance occurs when one class significantly outnumbers another in a classification dataset, which can cause models to become biased toward predicting the majority class. Common techniques to a",
-      "matched_score": 0.629484236240387,
+      "top_score": 0.5671378970146179,
+      "matched_chunk_text": "Class imbalance occurs when one class significantly outnumbers another in a classification dataset, which can cause mode",
+      "matched_score": 0.5671378970146179,
       "retrieved_doc_ids": [
         "doc_010",
         "doc_010",
@@ -134,9 +134,9 @@
       "query": "Why should I avoid rebasing commits that are already pushed to a shared branch?",
       "expected_doc_id": "doc_011",
       "label": "SUCCESS",
-      "top_score": 0.745164692401886,
-      "matched_chunk_text": "ry to create a linear sequence of commits. Rebasing produces a cleaner, more readable project history but should be avoided on commits that have already been pushed to a shared branch, since it change",
-      "matched_score": 0.745164692401886,
+      "top_score": 0.585843563079834,
+      "matched_chunk_text": "Git offers two primary strategies for integrating changes from one branch into another: merge and rebase. A merge create",
+      "matched_score": 0.585843563079834,
       "retrieved_doc_ids": [
         "doc_011",
         "doc_011",
@@ -144,16 +144,172 @@
       ]
     },
     {
-      "query": "What is the cache-aside pattern in Redis?",
+      "query": "What is the cache-aside pattern and how does TTL prevent stale entries?",
       "expected_doc_id": "doc_012",
       "label": "SUCCESS",
-      "top_score": 0.7440778613090515,
-      "matched_chunk_text": "Redis is commonly used as a caching layer to reduce load on primary databases and improve application response times. The cache-aside pattern is one of the most common strategies: the application firs",
-      "matched_score": 0.7440778613090515,
+      "top_score": 0.5289431214332581,
+      "matched_chunk_text": "e cache-aside pattern is one of the most common strategies: the application first checks Redis for the requested data, a",
+      "matched_score": 0.5289431214332581,
       "retrieved_doc_ids": [
         "doc_012",
         "doc_012",
         "doc_012"
+      ]
+    },
+    {
+      "query": "Why does Memcached not support persistence or complex data structures like sorted sets?",
+      "expected_doc_id": "doc_013",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.8032138347625732,
+      "matched_chunk_text": "and it does not support complex data structures like sorted sets or hashes, only simple key-value pairs. Memcached dist",
+      "matched_score": 0.8032138347625732,
+      "retrieved_doc_ids": [
+        "doc_013",
+        "doc_013",
+        "doc_013"
+      ]
+    },
+    {
+      "query": "Why can a high connection pool size overwhelm a MySQL server despite pooling?",
+      "expected_doc_id": "doc_014",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.8770471811294556,
+      "matched_chunk_text": "pool size too high, which can overwhelm the MySQL server with more concurrent connections than it can efficiently handl",
+      "matched_score": 0.8770471811294556,
+      "retrieved_doc_ids": [
+        "doc_014",
+        "doc_014",
+        "doc_014"
+      ]
+    },
+    {
+      "query": "Why doesn't depends_on in Docker Compose guarantee a dependent service is fully ready?",
+      "expected_doc_id": "doc_015",
+      "label": "LOW_CONFIDENCE",
+      "top_score": 0.4945381283760071,
+      "matched_chunk_text": "ends_on' field controls the startup order of services, but it does not wait for a service to be fully ready, only for th",
+      "matched_score": 0.4945381283760071,
+      "retrieved_doc_ids": [
+        "doc_015",
+        "doc_015",
+        "doc_015"
+      ]
+    },
+    {
+      "query": "How does Adam's bias-correction step counteract moving averages initialized at zero?",
+      "expected_doc_id": "doc_016",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.6685139536857605,
+      "matched_chunk_text": "the moving averages are initialized at zero and are therefore biased toward zero during the first few updates. Despite",
+      "matched_score": 0.6685139536857605,
+      "retrieved_doc_ids": [
+        "doc_016",
+        "doc_016",
+        "doc_016"
+      ]
+    },
+    {
+      "query": "Why does HNSW not require a training or clustering step before search, unlike IVF-based indices?",
+      "expected_doc_id": "doc_017",
+      "label": "SUCCESS",
+      "top_score": 0.5912262201309204,
+      "matched_chunk_text": "a training or clustering step beforehand, unlike IVF-based FAISS indices which need to be trained on representative data",
+      "matched_score": 0.5912262201309204,
+      "retrieved_doc_ids": [
+        "doc_017",
+        "doc_017",
+        "doc_017"
+      ]
+    },
+    {
+      "query": "How does a Kubernetes Service handle traffic when pod IPs are ephemeral?",
+      "expected_doc_id": "doc_018",
+      "label": "SUCCESS",
+      "top_score": 0.8229787349700928,
+      "matched_chunk_text": "A Kubernetes Service provides a stable network endpoint for a set of pods, since individual pod IP addresses are ephemer",
+      "matched_score": 0.8229787349700928,
+      "retrieved_doc_ids": [
+        "doc_018",
+        "doc_018",
+        "doc_018"
+      ]
+    },
+    {
+      "query": "Why do asynchronous queue messages cause incomplete distributed traces?",
+      "expected_doc_id": "doc_019",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.7131444811820984,
+      "matched_chunk_text": "en causes incomplete traces in production is that asynchronous processing, such as messages placed on a queue for later",
+      "matched_score": 0.7131444811820984,
+      "retrieved_doc_ids": [
+        "doc_019",
+        "doc_019",
+        "doc_019"
+      ]
+    },
+    {
+      "query": "Why can over-indexing a table slow down write-heavy workloads?",
+      "expected_doc_id": "doc_020",
+      "label": "SUCCESS",
+      "top_score": 0.6524866819381714,
+      "matched_chunk_text": "r-indexing a table, adding indexes on columns that are rarely queried, which slows down write-heavy workloads without pr",
+      "matched_score": 0.6524866819381714,
+      "retrieved_doc_ids": [
+        "doc_020",
+        "doc_020",
+        "doc_005"
+      ]
+    },
+    {
+      "query": "Which caching system is multithreaded and can better use multi-core machines for a single instance?",
+      "expected_doc_id": "doc_013",
+      "label": "SUCCESS",
+      "top_score": 0.5969400405883789,
+      "matched_chunk_text": "ines for a single cache instance compared to Redis, which is largely single-threaded for command execution. Memcached is",
+      "matched_score": 0.5969400405883789,
+      "retrieved_doc_ids": [
+        "doc_013",
+        "doc_013",
+        "doc_013"
+      ]
+    },
+    {
+      "query": "Which connection pool library is described as one of the fastest, using a lightweight low-locking design?",
+      "expected_doc_id": "doc_014",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.7059386968612671,
+      "matched_chunk_text": "in Node.js, or HikariCP in Java applications. HikariCP is widely regarded as one of the fastest connection pool impleme",
+      "matched_score": 0.7059386968612671,
+      "retrieved_doc_ids": [
+        "doc_014",
+        "doc_002",
+        "doc_014"
+      ]
+    },
+    {
+      "query": "At what sampling rate are critical operations like checkout flows typically traced in production?",
+      "expected_doc_id": "doc_019",
+      "label": "SUCCESS",
+      "top_score": 0.6087939739227295,
+      "matched_chunk_text": "pensive to store, so most production systems only trace a percentage of requests, though critical operations like checko",
+      "matched_score": 0.6087939739227295,
+      "retrieved_doc_ids": [
+        "doc_019",
+        "doc_019",
+        "doc_019"
+      ]
+    },
+    {
+      "query": "Which vector search approach uses graph traversal from a top-layer entry point down to the bottom layer?",
+      "expected_doc_id": "doc_017",
+      "label": "SUCCESS",
+      "top_score": 0.6567697525024414,
+      "matched_chunk_text": "a multi-layer graph structure to enable fast search in high-dimensional vector spaces. Unlike FAISS's IVF-based indices,",
+      "matched_score": 0.6567697525024414,
+      "retrieved_doc_ids": [
+        "doc_017",
+        "doc_017",
+        "doc_017"
       ]
     }
   ],
@@ -162,9 +318,323 @@
       "query": "How do containers on the same network find each other by name instead of IP?",
       "expected_doc_id": "doc_001",
       "label": "SUCCESS",
-      "top_score": 0.6638859510421753,
-      "matched_chunk_text": "ected to the same bridge network can communicate using IP addresses. To allow containers to communicate by name instead of IP, you should create a user-defined bridge network using 'docker network cre",
-      "matched_score": 0.6638859510421753,
+      "top_score": 0.6492146253585815,
+      "matched_chunk_text": "ainers on a user-defined network can resolve each other's names automatically through Docker's built-in DNS server. This",
+      "matched_score": 0.6492146253585815,
+      "retrieved_doc_ids": [
+        "doc_001",
+        "doc_018",
+        "doc_001"
+      ]
+    },
+    {
+      "query": "What is the difference between session pooling and transaction pooling in PgBouncer?",
+      "expected_doc_id": "doc_002",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.8321940898895264,
+      "matched_chunk_text": "PgBouncer supports three pooling modes: session pooling, transaction pooling, and statement pooling. Transaction poolin",
+      "matched_score": 0.8321940898895264,
+      "retrieved_doc_ids": [
+        "doc_002",
+        "doc_002",
+        "doc_002"
+      ]
+    },
+    {
+      "query": "How does FastAPI resolve dependencies that depend on other dependencies?",
+      "expected_doc_id": "doc_003",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.7382104992866516,
+      "matched_chunk_text": "other frameworks, FastAPI dependencies are resolved per-request, meaning each incoming request gets a fresh call to the",
+      "matched_score": 0.7382104992866516,
+      "retrieved_doc_ids": [
+        "doc_003",
+        "doc_003",
+        "doc_003"
+      ]
+    },
+    {
+      "query": "What happens if the learning rate in gradient descent is too high?",
+      "expected_doc_id": "doc_004",
+      "label": "SUCCESS",
+      "top_score": 0.5954679846763611,
+      "matched_chunk_text": "ng rate. If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge. If it is too s",
+      "matched_score": 0.5954679846763611,
+      "retrieved_doc_ids": [
+        "doc_004",
+        "doc_016",
+        "doc_004"
+      ]
+    },
+    {
+      "query": "Which FAISS index type uses product quantization to save memory?",
+      "expected_doc_id": "doc_005",
+      "label": "SUCCESS",
+      "top_score": 0.6579140424728394,
+      "matched_chunk_text": "FAISS provides several index types for different tradeoffs between search speed, memory usage, and accuracy. The simples",
+      "matched_score": 0.6579140424728394,
+      "retrieved_doc_ids": [
+        "doc_005",
+        "doc_005",
+        "doc_017"
+      ]
+    },
+    {
+      "query": "How can I compare metrics across multiple training runs in MLflow?",
+      "expected_doc_id": "doc_006",
+      "label": "SUCCESS",
+      "top_score": 0.6427164077758789,
+      "matched_chunk_text": "etric within your training script. MLflow automatically records the start and end time of each run, along with the sourc",
+      "matched_score": 0.6427164077758789,
+      "retrieved_doc_ids": [
+        "doc_006",
+        "doc_006",
+        "doc_006"
+      ]
+    },
+    {
+      "query": "What algorithm refills tokens at a fixed rate to control API request limits?",
+      "expected_doc_id": "doc_007",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.8011400699615479,
+      "matched_chunk_text": "Rate limiting protects an API from being overwhelmed by too many requests in a short period. The token bucket algorithm",
+      "matched_score": 0.8011400699615479,
+      "retrieved_doc_ids": [
+        "doc_007",
+        "doc_007",
+        "doc_007"
+      ]
+    },
+    {
+      "query": "Why shouldn't I use raw BERT embeddings for cosine similarity search?",
+      "expected_doc_id": "doc_008",
+      "label": "SUCCESS",
+      "top_score": 0.6139223575592041,
+      "matched_chunk_text": "ere semantically similar sentences are close together in vector space. Unlike raw BERT embeddings, which are not well-su",
+      "matched_score": 0.6139223575592041,
+      "retrieved_doc_ids": [
+        "doc_008",
+        "doc_008",
+        "doc_008"
+      ]
+    },
+    {
+      "query": "How do taints and tolerations affect where a pod gets scheduled?",
+      "expected_doc_id": "doc_009",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.6987780332565308,
+      "matched_chunk_text": "anti-affinity control scheduling based on the presence of other pods. Taints are applied to nodes to repel pods that do",
+      "matched_score": 0.6987780332565308,
+      "retrieved_doc_ids": [
+        "doc_009",
+        "doc_009",
+        "doc_009"
+      ]
+    },
+    {
+      "query": "Why can accuracy be a misleading metric when classes are imbalanced?",
+      "expected_doc_id": "doc_010",
+      "label": "SUCCESS",
+      "top_score": 0.6681214570999146,
+      "matched_chunk_text": "eful consideration in imbalanced settings, since accuracy can be misleading; metrics like precision, recall, F1 score, a",
+      "matched_score": 0.6681214570999146,
+      "retrieved_doc_ids": [
+        "doc_010",
+        "doc_010",
+        "doc_010"
+      ]
+    },
+    {
+      "query": "Why should I avoid rebasing commits that are already pushed to a shared branch?",
+      "expected_doc_id": "doc_011",
+      "label": "SUCCESS",
+      "top_score": 0.6122068762779236,
+      "matched_chunk_text": "have already been pushed to a shared branch, since it changes commit hashes and can cause conflicts for collaborators. I",
+      "matched_score": 0.6122068762779236,
+      "retrieved_doc_ids": [
+        "doc_011",
+        "doc_011",
+        "doc_011"
+      ]
+    },
+    {
+      "query": "What is the cache-aside pattern and how does TTL prevent stale entries?",
+      "expected_doc_id": "doc_012",
+      "label": "SUCCESS",
+      "top_score": 0.5273751020431519,
+      "matched_chunk_text": "application response times. The cache-aside pattern is one of the most common strategies: the application first checks R",
+      "matched_score": 0.5273751020431519,
+      "retrieved_doc_ids": [
+        "doc_012",
+        "doc_012",
+        "doc_012"
+      ]
+    },
+    {
+      "query": "Why does Memcached not support persistence or complex data structures like sorted sets?",
+      "expected_doc_id": "doc_013",
+      "label": "SUCCESS",
+      "top_score": 0.7921281456947327,
+      "matched_chunk_text": "ex data structures like sorted sets or hashes, only simple key-value pairs. Memcached distributes data across multiple s",
+      "matched_score": 0.7921281456947327,
+      "retrieved_doc_ids": [
+        "doc_013",
+        "doc_013",
+        "doc_013"
+      ]
+    },
+    {
+      "query": "Why can a high connection pool size overwhelm a MySQL server despite pooling?",
+      "expected_doc_id": "doc_014",
+      "label": "SUCCESS",
+      "top_score": 0.7177000641822815,
+      "matched_chunk_text": "Connection pooling in MySQL reduces the overhead of repeatedly opening and closing database connections, which can be ex",
+      "matched_score": 0.7177000641822815,
+      "retrieved_doc_ids": [
+        "doc_014",
+        "doc_014",
+        "doc_014"
+      ]
+    },
+    {
+      "query": "Why doesn't depends_on in Docker Compose guarantee a dependent service is fully ready?",
+      "expected_doc_id": "doc_015",
+      "label": "SUCCESS",
+      "top_score": 0.5191964507102966,
+      "matched_chunk_text": "artup order of services, but it does not wait for a service to be fully ready, only for the container to have started, w",
+      "matched_score": 0.5191964507102966,
+      "retrieved_doc_ids": [
+        "doc_015",
+        "doc_015",
+        "doc_015"
+      ]
+    },
+    {
+      "query": "How does Adam's bias-correction step counteract moving averages initialized at zero?",
+      "expected_doc_id": "doc_016",
+      "label": "SUCCESS",
+      "top_score": 0.8030725717544556,
+      "matched_chunk_text": "s. Adam also includes a bias-correction step early in training to counteract the fact that the moving averages are initi",
+      "matched_score": 0.8030725717544556,
+      "retrieved_doc_ids": [
+        "doc_016",
+        "doc_016",
+        "doc_016"
+      ]
+    },
+    {
+      "query": "Why does HNSW not require a training or clustering step before search, unlike IVF-based indices?",
+      "expected_doc_id": "doc_017",
+      "label": "SUCCESS",
+      "top_score": 0.5738722085952759,
+      "matched_chunk_text": "beforehand, unlike IVF-based FAISS indices which need to be trained on representative data first. The tradeoff is memory",
+      "matched_score": 0.5738722085952759,
+      "retrieved_doc_ids": [
+        "doc_017",
+        "doc_017",
+        "doc_017"
+      ]
+    },
+    {
+      "query": "How does a Kubernetes Service handle traffic when pod IPs are ephemeral?",
+      "expected_doc_id": "doc_018",
+      "label": "SUCCESS",
+      "top_score": 0.8229787349700928,
+      "matched_chunk_text": "A Kubernetes Service provides a stable network endpoint for a set of pods, since individual pod IP addresses are ephemer",
+      "matched_score": 0.8229787349700928,
+      "retrieved_doc_ids": [
+        "doc_018",
+        "doc_018",
+        "doc_018"
+      ]
+    },
+    {
+      "query": "Why do asynchronous queue messages cause incomplete distributed traces?",
+      "expected_doc_id": "doc_019",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.7131444811820984,
+      "matched_chunk_text": "en causes incomplete traces in production is that asynchronous processing, such as messages placed on a queue for later",
+      "matched_score": 0.7131444811820984,
+      "retrieved_doc_ids": [
+        "doc_019",
+        "doc_019",
+        "doc_019"
+      ]
+    },
+    {
+      "query": "Why can over-indexing a table slow down write-heavy workloads?",
+      "expected_doc_id": "doc_020",
+      "label": "SUCCESS",
+      "top_score": 0.6077606678009033,
+      "matched_chunk_text": "pdate the index structure, which adds write overhead, and indexes consume additional disk space. A common mistake is ove",
+      "matched_score": 0.6077606678009033,
+      "retrieved_doc_ids": [
+        "doc_020",
+        "doc_020",
+        "doc_020"
+      ]
+    },
+    {
+      "query": "Which caching system is multithreaded and can better use multi-core machines for a single instance?",
+      "expected_doc_id": "doc_013",
+      "label": "SUCCESS",
+      "top_score": 0.6862695217132568,
+      "matched_chunk_text": "d by design, it can take better advantage of multi-core machines for a single cache instance compared to Redis, which is",
+      "matched_score": 0.6862695217132568,
+      "retrieved_doc_ids": [
+        "doc_013",
+        "doc_013",
+        "doc_013"
+      ]
+    },
+    {
+      "query": "Which connection pool library is described as one of the fastest, using a lightweight low-locking design?",
+      "expected_doc_id": "doc_014",
+      "label": "FRAGMENTED_CONTEXT",
+      "top_score": 0.7059386968612671,
+      "matched_chunk_text": "in Node.js, or HikariCP in Java applications. HikariCP is widely regarded as one of the fastest connection pool impleme",
+      "matched_score": 0.7059386968612671,
+      "retrieved_doc_ids": [
+        "doc_014",
+        "doc_014",
+        "doc_002"
+      ]
+    },
+    {
+      "query": "At what sampling rate are critical operations like checkout flows typically traced in production?",
+      "expected_doc_id": "doc_019",
+      "label": "SUCCESS",
+      "top_score": 0.5834511518478394,
+      "matched_chunk_text": "uction systems only trace a percentage of requests, though critical operations like checkout flows are often force-sampl",
+      "matched_score": 0.5834511518478394,
+      "retrieved_doc_ids": [
+        "doc_019",
+        "doc_019",
+        "doc_019"
+      ]
+    },
+    {
+      "query": "Which vector search approach uses graph traversal from a top-layer entry point down to the bottom layer?",
+      "expected_doc_id": "doc_017",
+      "label": "SUCCESS",
+      "top_score": 0.6111280918121338,
+      "matched_chunk_text": "t neighbor search that builds a multi-layer graph structure to enable fast search in high-dimensional vector spaces. Unl",
+      "matched_score": 0.6111280918121338,
+      "retrieved_doc_ids": [
+        "doc_017",
+        "doc_017",
+        "doc_017"
+      ]
+    }
+  ],
+  "sentence_based": [
+    {
+      "query": "How do containers on the same network find each other by name instead of IP?",
+      "expected_doc_id": "doc_001",
+      "label": "SUCCESS",
+      "top_score": 0.7185298204421997,
+      "matched_chunk_text": "Containers connected to the same bridge network can communicate using IP addresses. To allow containers to communicate by name instead of IP, you should create a user-defined bridge network using 'docker network create'.",
+      "matched_score": 0.7185298204421997,
       "retrieved_doc_ids": [
         "doc_001",
         "doc_001",
@@ -175,9 +645,9 @@
       "query": "What is the difference between session pooling and transaction pooling in PgBouncer?",
       "expected_doc_id": "doc_002",
       "label": "SUCCESS",
-      "top_score": 0.648867666721344,
-      "matched_chunk_text": "and PostgreSQL, maintaining a pool of reusable connections. PgBouncer supports three pooling modes: session pooling, transaction pooling, and statement pooling. Transaction pooling is the most common",
-      "matched_score": 0.648867666721344,
+      "top_score": 0.6094187498092651,
+      "matched_chunk_text": "Tools like PgBouncer sit between your application and PostgreSQL, maintaining a pool of reusable connections. PgBouncer supports three pooling modes: session pooling, transaction pooling, and statement pooling.",
+      "matched_score": 0.6094187498092651,
       "retrieved_doc_ids": [
         "doc_002",
         "doc_002",
@@ -188,9 +658,9 @@
       "query": "How does FastAPI resolve dependencies that depend on other dependencies?",
       "expected_doc_id": "doc_003",
       "label": "SUCCESS",
-      "top_score": 0.7906160354614258,
-      "matched_chunk_text": "n, and FastAPI automatically calls it before executing your endpoint. Dependencies can themselves depend on other dependencies, forming a chain that FastAPI resolves automatically. This pattern is com",
-      "matched_score": 0.7906160354614258,
+      "top_score": 0.8511955738067627,
+      "matched_chunk_text": "Dependencies can themselves depend on other dependencies, forming a chain that FastAPI resolves automatically. This pattern is commonly used for authentication, database session management, and shared validation logic.",
+      "matched_score": 0.8511955738067627,
       "retrieved_doc_ids": [
         "doc_003",
         "doc_003",
@@ -201,9 +671,9 @@
       "query": "What happens if the learning rate in gradient descent is too high?",
       "expected_doc_id": "doc_004",
       "label": "SUCCESS",
-      "top_score": 0.5934234857559204,
-      "matched_chunk_text": "n of this gradient. The fraction is controlled by the learning rate. If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge. If it is too small, training will",
-      "matched_score": 0.5934234857559204,
+      "top_score": 0.5358484983444214,
+      "matched_chunk_text": "If it is too small, training will be very slow. Variants like stochastic gradient descent compute the gradient using a single training example or small batch, rather than the entire dataset, which makes training feasible on large datasets.",
+      "matched_score": 0.5358484983444214,
       "retrieved_doc_ids": [
         "doc_004",
         "doc_004",
@@ -214,22 +684,22 @@
       "query": "Which FAISS index type uses product quantization to save memory?",
       "expected_doc_id": "doc_005",
       "label": "SUCCESS",
-      "top_score": 0.6143156290054321,
-      "matched_chunk_text": "FAISS provides several index types for different tradeoffs between search speed, memory usage, and accuracy. The simplest index, IndexFlatL2, performs an exhaustive search by comparing the query vecto",
-      "matched_score": 0.6143156290054321,
+      "top_score": 0.6030246019363403,
+      "matched_chunk_text": "FAISS provides several index types for different tradeoffs between search speed, memory usage, and accuracy. The simplest index, IndexFlatL2, performs an exhaustive search by comparing the query vector against every vector in the index, guaranteeing exact results but scaling poorly with dataset size.",
+      "matched_score": 0.6030246019363403,
       "retrieved_doc_ids": [
         "doc_005",
         "doc_005",
-        "doc_005"
+        "doc_017"
       ]
     },
     {
       "query": "How can I compare metrics across multiple training runs in MLflow?",
       "expected_doc_id": "doc_006",
       "label": "SUCCESS",
-      "top_score": 0.6861727237701416,
-      "matched_chunk_text": "MLflow Tracking allows you to log parameters, metrics, and artifacts from your machine learning experiments so you can compare runs later. Each run is recorded under an experiment, and you can log val",
-      "matched_score": 0.6861727237701416,
+      "top_score": 0.7098642587661743,
+      "matched_chunk_text": "MLflow Tracking allows you to log parameters, metrics, and artifacts from your machine learning experiments so you can compare runs later. Each run is recorded under an experiment, and you can log values using simple function calls like mlflow.log_param and mlflow.log_metric within your training script.",
+      "matched_score": 0.7098642587661743,
       "retrieved_doc_ids": [
         "doc_006",
         "doc_006",
@@ -240,9 +710,9 @@
       "query": "What algorithm refills tokens at a fixed rate to control API request limits?",
       "expected_doc_id": "doc_007",
       "label": "SUCCESS",
-      "top_score": 0.7698493599891663,
-      "matched_chunk_text": "Rate limiting protects an API from being overwhelmed by too many requests in a short period. The token bucket algorithm is one of the most widely used approaches: each client is allocated a bucket tha",
-      "matched_score": 0.7698493599891663,
+      "top_score": 0.7995436191558838,
+      "matched_chunk_text": "Rate limiting protects an API from being overwhelmed by too many requests in a short period. The token bucket algorithm is one of the most widely used approaches: each client is allocated a bucket that refills with tokens at a fixed rate, and each request consumes one token.",
+      "matched_score": 0.7995436191558838,
       "retrieved_doc_ids": [
         "doc_007",
         "doc_007",
@@ -253,9 +723,9 @@
       "query": "Why shouldn't I use raw BERT embeddings for cosine similarity search?",
       "expected_doc_id": "doc_008",
       "label": "SUCCESS",
-      "top_score": 0.7259464263916016,
-      "matched_chunk_text": "tor space. Unlike raw BERT embeddings, which are not well-suited for direct comparison using cosine similarity, Sentence Transformers use a siamese network structure during training to optimize embedd",
-      "matched_score": 0.7259464263916016,
+      "top_score": 0.6493349075317383,
+      "matched_chunk_text": "Sentence Transformers are models specifically fine-tuned to produce sentence embeddings where semantically similar sentences are close together in vector space. Unlike raw BERT embeddings, which are not well-suited for direct comparison using cosine similarity, Sentence Transformers use a siamese network structure during training to optimize embeddings for this exact use case.",
+      "matched_score": 0.6493349075317383,
       "retrieved_doc_ids": [
         "doc_008",
         "doc_008",
@@ -266,9 +736,9 @@
       "query": "How do taints and tolerations affect where a pod gets scheduled?",
       "expected_doc_id": "doc_009",
       "label": "SUCCESS",
-      "top_score": 0.7053869366645813,
-      "matched_chunk_text": "e scheduled on based on node labels, while pod affinity and anti-affinity control scheduling based on the presence of other pods. Taints are applied to nodes to repel pods that do not have a matching",
-      "matched_score": 0.7053869366645813,
+      "top_score": 0.6404903531074524,
+      "matched_chunk_text": "Node affinity allows you to constrain which nodes a pod can be scheduled on based on node labels, while pod affinity and anti-affinity control scheduling based on the presence of other pods. Taints are applied to nodes to repel pods that do not have a matching toleration, which is commonly used to reserve nodes for specific workloads.",
+      "matched_score": 0.6404903531074524,
       "retrieved_doc_ids": [
         "doc_009",
         "doc_009",
@@ -279,22 +749,22 @@
       "query": "Why can accuracy be a misleading metric when classes are imbalanced?",
       "expected_doc_id": "doc_010",
       "label": "SUCCESS",
-      "top_score": 0.6629176139831543,
-      "matched_chunk_text": "minority class is penalized more heavily during training. Evaluation metrics also need careful consideration in imbalanced settings, since accuracy can be misleading; metrics like precision, recall, F",
-      "matched_score": 0.6629176139831543,
+      "top_score": 0.6102832555770874,
+      "matched_chunk_text": "Class imbalance occurs when one class significantly outnumbers another in a classification dataset, which can cause models to become biased toward predicting the majority class. Common techniques to address this include oversampling the minority class, undersampling the majority class, or generating synthetic samples using methods like SMOTE.",
+      "matched_score": 0.6102832555770874,
       "retrieved_doc_ids": [
         "doc_010",
         "doc_010",
-        "doc_010"
+        "doc_004"
       ]
     },
     {
       "query": "Why should I avoid rebasing commits that are already pushed to a shared branch?",
       "expected_doc_id": "doc_011",
       "label": "SUCCESS",
-      "top_score": 0.6255216598510742,
-      "matched_chunk_text": "d, moves the entire branch to begin on the tip of another branch, effectively rewriting commit history to create a linear sequence of commits. Rebasing produces a cleaner, more readable project histor",
-      "matched_score": 0.6255216598510742,
+      "top_score": 0.7180310487747192,
+      "matched_chunk_text": "A rebase, on the other hand, moves the entire branch to begin on the tip of another branch, effectively rewriting commit history to create a linear sequence of commits. Rebasing produces a cleaner, more readable project history but should be avoided on commits that have already been pushed to a shared branch, since it changes commit hashes and can cause conflicts for collaborators.",
+      "matched_score": 0.7180310487747192,
       "retrieved_doc_ids": [
         "doc_011",
         "doc_011",
@@ -302,174 +772,172 @@
       ]
     },
     {
-      "query": "What is the cache-aside pattern in Redis?",
+      "query": "What is the cache-aside pattern and how does TTL prevent stale entries?",
       "expected_doc_id": "doc_012",
       "label": "SUCCESS",
-      "top_score": 0.7440778613090515,
-      "matched_chunk_text": "Redis is commonly used as a caching layer to reduce load on primary databases and improve application response times. The cache-aside pattern is one of the most common strategies: the application firs",
-      "matched_score": 0.7440778613090515,
+      "top_score": 0.5454628467559814,
+      "matched_chunk_text": "Cache invalidation remains one of the harder problems in caching, since determining exactly when cached data becomes stale often requires careful design around how and when underlying data changes.",
+      "matched_score": 0.5454628467559814,
       "retrieved_doc_ids": [
         "doc_012",
         "doc_012",
         "doc_012"
       ]
-    }
-  ],
-  "sentence_based": [
+    },
     {
-      "query": "How do containers on the same network find each other by name instead of IP?",
-      "expected_doc_id": "doc_001",
+      "query": "Why does Memcached not support persistence or complex data structures like sorted sets?",
+      "expected_doc_id": "doc_013",
       "label": "SUCCESS",
-      "top_score": 0.6865003108978271,
-      "matched_chunk_text": "To allow containers to communicate by name instead of IP, you should create a user-defined bridge network using 'docker network create'. Containers on a user-defined network can resolve each other's names automatically through Docker's built-in DNS server. This is different from the default bridge network, which does not support automatic DNS resolution between containers.",
-      "matched_score": 0.6865003108978271,
+      "top_score": 0.7458193302154541,
+      "matched_chunk_text": "Memcached is a simple, high-performance, distributed memory caching system originally designed to speed up dynamic web applications by reducing database load. Unlike Redis, Memcached stores data purely in memory with no persistence to disk, and it does not support complex data structures like sorted sets or hashes, only simple key-value pairs.",
+      "matched_score": 0.7458193302154541,
       "retrieved_doc_ids": [
-        "doc_001",
-        "doc_001",
-        "doc_001"
+        "doc_013",
+        "doc_013",
+        "doc_013"
       ]
     },
     {
-      "query": "What is the difference between session pooling and transaction pooling in PgBouncer?",
-      "expected_doc_id": "doc_002",
+      "query": "Why can a high connection pool size overwhelm a MySQL server despite pooling?",
+      "expected_doc_id": "doc_014",
       "label": "SUCCESS",
-      "top_score": 0.7568685412406921,
-      "matched_chunk_text": "PgBouncer supports three pooling modes: session pooling, transaction pooling, and statement pooling. Transaction pooling is the most commonly used mode in production because it releases the connection back to the pool as soon as a transaction completes, allowing many clients to share a small number of actual database connections. This significantly reduces the overhead of connection establishment for applications with many short-lived database interactions.",
-      "matched_score": 0.7568685412406921,
+      "top_score": 0.7053114771842957,
+      "matched_chunk_text": "HikariCP is widely regarded as one of the fastest connection pool implementations available, using a lightweight design that avoids unnecessary locking. A common misconfiguration is setting the pool size too high, which can overwhelm the MySQL server with more concurrent connections than it can efficiently handle, since MySQL's max_connections setting caps how many simultaneous connections the server will accept regardless of pool size on the client.",
+      "matched_score": 0.7053114771842957,
       "retrieved_doc_ids": [
-        "doc_002",
-        "doc_002",
-        "doc_009"
+        "doc_014",
+        "doc_014",
+        "doc_002"
       ]
     },
     {
-      "query": "How does FastAPI resolve dependencies that depend on other dependencies?",
-      "expected_doc_id": "doc_003",
+      "query": "Why doesn't depends_on in Docker Compose guarantee a dependent service is fully ready?",
+      "expected_doc_id": "doc_015",
       "label": "SUCCESS",
-      "top_score": 0.7927509546279907,
-      "matched_chunk_text": "FastAPI's dependency injection system allows you to declare shared logic that multiple path operations can reuse. You define a dependency as a function, and FastAPI automatically calls it before executing your endpoint. Dependencies can themselves depend on other dependencies, forming a chain that FastAPI resolves automatically.",
-      "matched_score": 0.7927509546279907,
+      "top_score": 0.7090746164321899,
+      "matched_chunk_text": "Compose is primarily intended for local development and testing environments rather than production orchestration, where tools like Kubernetes are more commonly used. The 'depends_on' field controls the startup order of services, but it does not wait for a service to be fully ready, only for the container to have started, which is a common source of race conditions when one service needs another to be fully initialized first.",
+      "matched_score": 0.7090746164321899,
       "retrieved_doc_ids": [
+        "doc_015",
         "doc_003",
-        "doc_003",
-        "doc_012"
+        "doc_015"
       ]
     },
     {
-      "query": "What happens if the learning rate in gradient descent is too high?",
-      "expected_doc_id": "doc_004",
+      "query": "How does Adam's bias-correction step counteract moving averages initialized at zero?",
+      "expected_doc_id": "doc_016",
       "label": "SUCCESS",
-      "top_score": 0.7152310013771057,
-      "matched_chunk_text": "If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge. If it is too small, training will be very slow. Variants like stochastic gradient descent compute the gradient using a single training example or small batch, rather than the entire dataset, which makes training feasible on large datasets.",
-      "matched_score": 0.7152310013771057,
+      "top_score": 0.712522029876709,
+      "matched_chunk_text": "These two estimates allow Adam to adapt the effective learning rate for each parameter individually, giving larger updates to parameters with small or infrequent gradients and smaller updates to parameters with large or frequent gradients. Adam also includes a bias-correction step early in training to counteract the fact that the moving averages are initialized at zero and are therefore biased toward zero during the first few updates.",
+      "matched_score": 0.712522029876709,
       "retrieved_doc_ids": [
-        "doc_004",
-        "doc_004",
-        "doc_007"
+        "doc_016",
+        "doc_016",
+        "doc_016"
       ]
     },
     {
-      "query": "Which FAISS index type uses product quantization to save memory?",
-      "expected_doc_id": "doc_005",
+      "query": "Why does HNSW not require a training or clustering step before search, unlike IVF-based indices?",
+      "expected_doc_id": "doc_017",
       "label": "SUCCESS",
-      "top_score": 0.5697962641716003,
-      "matched_chunk_text": "For very large datasets, IndexIVFPQ additionally compresses vectors using product quantization, drastically reducing memory usage at the cost of some precision. Choosing the right index depends on your dataset size, latency requirements, and available memory. For datasets under a million vectors, a flat index is often fast enough and avoids the complexity of tuning cluster parameters.",
-      "matched_score": 0.5697962641716003,
+      "top_score": 0.7416061162948608,
+      "matched_chunk_text": "HNSW generally achieves excellent recall and low latency without requiring a training or clustering step beforehand, unlike IVF-based FAISS indices which need to be trained on representative data first. The tradeoff is memory usage, since HNSW graphs typically require more memory per vector than compressed FAISS indices like IVFPQ.",
+      "matched_score": 0.7416061162948608,
       "retrieved_doc_ids": [
-        "doc_005",
-        "doc_005",
-        "doc_008"
-      ]
-    },
-    {
-      "query": "How can I compare metrics across multiple training runs in MLflow?",
-      "expected_doc_id": "doc_006",
-      "label": "SUCCESS",
-      "top_score": 0.7057974338531494,
-      "matched_chunk_text": "MLflow Tracking allows you to log parameters, metrics, and artifacts from your machine learning experiments so you can compare runs later. Each run is recorded under an experiment, and you can log values using simple function calls like mlflow.log_param and mlflow.log_metric within your training script. MLflow automatically records the start and end time of each run, along with the source code version if you are using git.",
-      "matched_score": 0.7057974338531494,
-      "retrieved_doc_ids": [
-        "doc_006",
-        "doc_006",
-        "doc_010"
-      ]
-    },
-    {
-      "query": "What algorithm refills tokens at a fixed rate to control API request limits?",
-      "expected_doc_id": "doc_007",
-      "label": "SUCCESS",
-      "top_score": 0.7814859747886658,
-      "matched_chunk_text": "Rate limiting protects an API from being overwhelmed by too many requests in a short period. The token bucket algorithm is one of the most widely used approaches: each client is allocated a bucket that refills with tokens at a fixed rate, and each request consumes one token. If the bucket is empty, the request is rejected or queued.",
-      "matched_score": 0.7814859747886658,
-      "retrieved_doc_ids": [
-        "doc_007",
-        "doc_007",
-        "doc_004"
-      ]
-    },
-    {
-      "query": "Why shouldn't I use raw BERT embeddings for cosine similarity search?",
-      "expected_doc_id": "doc_008",
-      "label": "SUCCESS",
-      "top_score": 0.6423304677009583,
-      "matched_chunk_text": "When building a semantic search system, it's important to use the same model for encoding both the documents and the queries, since embeddings from different models are not comparable. Normalizing embeddings to unit length before computing cosine similarity is also a common practice that can simplify similarity calculations to a simple dot product.",
-      "matched_score": 0.6423304677009583,
-      "retrieved_doc_ids": [
-        "doc_008",
-        "doc_008",
+        "doc_017",
+        "doc_017",
         "doc_005"
       ]
     },
     {
-      "query": "How do taints and tolerations affect where a pod gets scheduled?",
-      "expected_doc_id": "doc_009",
+      "query": "How does a Kubernetes Service handle traffic when pod IPs are ephemeral?",
+      "expected_doc_id": "doc_018",
       "label": "SUCCESS",
-      "top_score": 0.7912077903747559,
-      "matched_chunk_text": "Taints are applied to nodes to repel pods that do not have a matching toleration, which is commonly used to reserve nodes for specific workloads. If the scheduler cannot find a suitable node for a pod, the pod remains in a Pending state until a suitable node becomes available or the constraints are relaxed. Resource requests and limits also influence scheduling, since the scheduler avoids placing pods on nodes that lack sufficient available resources.",
-      "matched_score": 0.7912077903747559,
+      "top_score": 0.8102321624755859,
+      "matched_chunk_text": "A Kubernetes Service provides a stable network endpoint for a set of pods, since individual pod IP addresses are ephemeral and change whenever a pod is recreated. When a Service is created, Kubernetes assigns it a stable virtual IP address called a ClusterIP, and kube-proxy on each node configures networking rules so that traffic sent to that ClusterIP gets load-balanced across the pods matching the Service's label selector.",
+      "matched_score": 0.8102321624755859,
       "retrieved_doc_ids": [
+        "doc_018",
         "doc_009",
-        "doc_009",
-        "doc_001"
+        "doc_018"
       ]
     },
     {
-      "query": "Why can accuracy be a misleading metric when classes are imbalanced?",
-      "expected_doc_id": "doc_010",
+      "query": "Why do asynchronous queue messages cause incomplete distributed traces?",
+      "expected_doc_id": "doc_019",
       "label": "SUCCESS",
-      "top_score": 0.6084014177322388,
-      "matched_chunk_text": "Class imbalance occurs when one class significantly outnumbers another in a classification dataset, which can cause models to become biased toward predicting the majority class. Common techniques to address this include oversampling the minority class, undersampling the majority class, or generating synthetic samples using methods like SMOTE. Adjusting the class weights in the loss function is another effective approach, where misclassifying the minority class is penalized more heavily during training.",
-      "matched_score": 0.6084014177322388,
+      "top_score": 0.5548644065856934,
+      "matched_chunk_text": "One subtlety that often causes incomplete traces in production is that asynchronous processing, such as messages placed on a queue for later processing, requires manually propagating the trace context, since the automatic instrumentation that works for synchronous HTTP calls does not automatically follow messages through a queue. Popular tools in this space include Jaeger, Zipkin, and OpenTelemetry, with OpenTelemetry increasingly becoming the vendor-neutral standard for instrumentation across languages.",
+      "matched_score": 0.5548644065856934,
       "retrieved_doc_ids": [
-        "doc_010",
-        "doc_010",
-        "doc_004"
+        "doc_019",
+        "doc_019",
+        "doc_019"
       ]
     },
     {
-      "query": "Why should I avoid rebasing commits that are already pushed to a shared branch?",
-      "expected_doc_id": "doc_011",
+      "query": "Why can over-indexing a table slow down write-heavy workloads?",
+      "expected_doc_id": "doc_020",
       "label": "SUCCESS",
-      "top_score": 0.7546200752258301,
-      "matched_chunk_text": "Rebasing produces a cleaner, more readable project history but should be avoided on commits that have already been pushed to a shared branch, since it changes commit hashes and can cause conflicts for collaborators. Interactive rebase allows you to edit, squash, or reorder commits before they are applied, which is useful for cleaning up a messy commit history before merging a feature branch.",
-      "matched_score": 0.7546200752258301,
+      "top_score": 0.5724482536315918,
+      "matched_chunk_text": "A common mistake is over-indexing a table, adding indexes on columns that are rarely queried, which slows down write-heavy workloads without providing meaningful read performance benefits. Composite indexes, which span multiple columns, are most effective when the query's filter conditions match the same column order the index was created with.",
+      "matched_score": 0.5724482536315918,
       "retrieved_doc_ids": [
-        "doc_011",
-        "doc_011",
-        "doc_004"
+        "doc_020",
+        "doc_020",
+        "doc_020"
       ]
     },
     {
-      "query": "What is the cache-aside pattern in Redis?",
-      "expected_doc_id": "doc_012",
+      "query": "Which caching system is multithreaded and can better use multi-core machines for a single instance?",
+      "expected_doc_id": "doc_013",
       "label": "SUCCESS",
-      "top_score": 0.7532756924629211,
-      "matched_chunk_text": "Redis is commonly used as a caching layer to reduce load on primary databases and improve application response times. The cache-aside pattern is one of the most common strategies: the application first checks Redis for the requested data, and if it is not found, the application queries the database and stores the result in Redis for future requests. Time-to-live values are typically set on cached entries to prevent stale data from persisting indefinitely.",
-      "matched_score": 0.7532756924629211,
+      "top_score": 0.6051742434501648,
+      "matched_chunk_text": "Memcached distributes data across multiple servers using client-side consistent hashing, meaning the client library decides which server a given key belongs to. Because Memcached is multithreaded by design, it can take better advantage of multi-core machines for a single cache instance compared to Redis, which is largely single-threaded for command execution.",
+      "matched_score": 0.6051742434501648,
       "retrieved_doc_ids": [
-        "doc_012",
-        "doc_012",
-        "doc_003"
+        "doc_013",
+        "doc_013",
+        "doc_013"
+      ]
+    },
+    {
+      "query": "Which connection pool library is described as one of the fastest, using a lightweight low-locking design?",
+      "expected_doc_id": "doc_014",
+      "label": "SUCCESS",
+      "top_score": 0.6329487562179565,
+      "matched_chunk_text": "HikariCP is widely regarded as one of the fastest connection pool implementations available, using a lightweight design that avoids unnecessary locking. A common misconfiguration is setting the pool size too high, which can overwhelm the MySQL server with more concurrent connections than it can efficiently handle, since MySQL's max_connections setting caps how many simultaneous connections the server will accept regardless of pool size on the client.",
+      "matched_score": 0.6329487562179565,
+      "retrieved_doc_ids": [
+        "doc_014",
+        "doc_014",
+        "doc_002"
+      ]
+    },
+    {
+      "query": "At what sampling rate are critical operations like checkout flows typically traced in production?",
+      "expected_doc_id": "doc_019",
+      "label": "SUCCESS",
+      "top_score": 0.7447706460952759,
+      "matched_chunk_text": "Sampling is another important consideration: tracing every single request at high scale can be prohibitively expensive to store, so most production systems only trace a percentage of requests, though critical operations like checkout flows are often force-sampled at 100% regardless of the general sampling rate to ensure they are always debuggable.",
+      "matched_score": 0.7447706460952759,
+      "retrieved_doc_ids": [
+        "doc_019",
+        "doc_002",
+        "doc_019"
+      ]
+    },
+    {
+      "query": "Which vector search approach uses graph traversal from a top-layer entry point down to the bottom layer?",
+      "expected_doc_id": "doc_017",
+      "label": "SUCCESS",
+      "top_score": 0.5201243162155151,
+      "matched_chunk_text": "HNSW, or Hierarchical Navigable Small World graphs, is an algorithm for approximate nearest neighbor search that builds a multi-layer graph structure to enable fast search in high-dimensional vector spaces. Unlike FAISS's IVF-based indices, which rely on clustering the vector space into partitions, HNSW organizes vectors into a graph where each node is connected to its approximate nearest neighbors, and search proceeds by greedily traversing the graph from a random entry point in the top layer down to the bottom layer.",
+      "matched_score": 0.5201243162155151,
+      "retrieved_doc_ids": [
+        "doc_017",
+        "doc_017",
+        "doc_020"
       ]
     }
   ],
@@ -478,26 +946,26 @@
       "query": "How do containers on the same network find each other by name instead of IP?",
       "expected_doc_id": "doc_001",
       "label": "SUCCESS",
-      "top_score": 0.6904703378677368,
+      "top_score": 0.6904704570770264,
       "matched_chunk_text": "Docker containers communicate with each other using virtual networks. By default, Docker creates a bridge network when you install it. Containers connected to the same bridge network can communicate using IP addresses. To allow containers to communicate by name instead of IP, you should create a user-defined bridge network using 'docker network create'. Containers on a user-defined network can resolve each other's names automatically through Docker's built-in DNS server. This is different from the default bridge network, which does not support automatic DNS resolution between containers. If you need containers to talk to services outside the Docker host, you typically use port mapping with the -p flag, which forwards a port on the host machine to a port inside the container.",
-      "matched_score": 0.6904703378677368,
+      "matched_score": 0.6904704570770264,
       "retrieved_doc_ids": [
         "doc_001",
-        "doc_009",
-        "doc_005"
+        "doc_018",
+        "doc_015"
       ]
     },
     {
       "query": "What is the difference between session pooling and transaction pooling in PgBouncer?",
       "expected_doc_id": "doc_002",
       "label": "SUCCESS",
-      "top_score": 0.651302695274353,
+      "top_score": 0.6513027548789978,
       "matched_chunk_text": "Connection pooling in PostgreSQL helps manage database connections efficiently, especially under high load. Without pooling, every new client connection requires PostgreSQL to fork a new backend process, which is expensive in terms of memory and CPU. Tools like PgBouncer sit between your application and PostgreSQL, maintaining a pool of reusable connections. PgBouncer supports three pooling modes: session pooling, transaction pooling, and statement pooling. Transaction pooling is the most commonly used mode in production because it releases the connection back to the pool as soon as a transaction completes, allowing many clients to share a small number of actual database connections. This significantly reduces the overhead of connection establishment for applications with many short-lived database interactions.",
-      "matched_score": 0.651302695274353,
+      "matched_score": 0.6513027548789978,
       "retrieved_doc_ids": [
         "doc_002",
-        "doc_009",
-        "doc_007"
+        "doc_014",
+        "doc_009"
       ]
     },
     {
@@ -509,21 +977,21 @@
       "matched_score": 0.6290125846862793,
       "retrieved_doc_ids": [
         "doc_003",
-        "doc_008",
-        "doc_012"
+        "doc_015",
+        "doc_019"
       ]
     },
     {
       "query": "What happens if the learning rate in gradient descent is too high?",
       "expected_doc_id": "doc_004",
       "label": "SUCCESS",
-      "top_score": 0.5493286848068237,
+      "top_score": 0.5493288636207581,
       "matched_chunk_text": "Gradient descent is an optimization algorithm used to minimize a loss function by iteratively moving in the direction of steepest descent. At each step, the algorithm computes the gradient of the loss function with respect to the model parameters, then updates the parameters by subtracting a fraction of this gradient. The fraction is controlled by the learning rate. If the learning rate is too large, the algorithm may overshoot the minimum and fail to converge. If it is too small, training will be very slow. Variants like stochastic gradient descent compute the gradient using a single training example or small batch, rather than the entire dataset, which makes training feasible on large datasets. Momentum-based methods add a fraction of the previous update to the current one, which helps accelerate convergence and reduce oscillation.",
-      "matched_score": 0.5493286848068237,
+      "matched_score": 0.5493288636207581,
       "retrieved_doc_ids": [
         "doc_004",
-        "doc_007",
-        "doc_010"
+        "doc_016",
+        "doc_007"
       ]
     },
     {
@@ -535,8 +1003,8 @@
       "matched_score": 0.5812723636627197,
       "retrieved_doc_ids": [
         "doc_005",
-        "doc_012",
-        "doc_008"
+        "doc_020",
+        "doc_017"
       ]
     },
     {
@@ -548,8 +1016,8 @@
       "matched_score": 0.7141125798225403,
       "retrieved_doc_ids": [
         "doc_006",
-        "doc_010",
-        "doc_004"
+        "doc_019",
+        "doc_016"
       ]
     },
     {
@@ -561,73 +1029,229 @@
       "matched_score": 0.774143397808075,
       "retrieved_doc_ids": [
         "doc_007",
-        "doc_012",
-        "doc_009"
+        "doc_019",
+        "doc_012"
       ]
     },
     {
       "query": "Why shouldn't I use raw BERT embeddings for cosine similarity search?",
       "expected_doc_id": "doc_008",
       "label": "SUCCESS",
-      "top_score": 0.7122592926025391,
+      "top_score": 0.7122594118118286,
       "matched_chunk_text": "Sentence Transformers are models specifically fine-tuned to produce sentence embeddings where semantically similar sentences are close together in vector space. Unlike raw BERT embeddings, which are not well-suited for direct comparison using cosine similarity, Sentence Transformers use a siamese network structure during training to optimize embeddings for this exact use case. Popular models like all-MiniLM-L6-v2 offer a good balance between embedding quality and inference speed, making them suitable for real-time semantic search applications. When building a semantic search system, it's important to use the same model for encoding both the documents and the queries, since embeddings from different models are not comparable. Normalizing embeddings to unit length before computing cosine similarity is also a common practice that can simplify similarity calculations to a simple dot product.",
-      "matched_score": 0.7122592926025391,
+      "matched_score": 0.7122594118118286,
       "retrieved_doc_ids": [
         "doc_008",
         "doc_005",
-        "doc_004"
+        "doc_017"
       ]
     },
     {
       "query": "How do taints and tolerations affect where a pod gets scheduled?",
       "expected_doc_id": "doc_009",
       "label": "SUCCESS",
-      "top_score": 0.6539468765258789,
+      "top_score": 0.6539468169212341,
       "matched_chunk_text": "The Kubernetes scheduler is responsible for assigning newly created pods to nodes in the cluster. Scheduling decisions are based on resource requirements, hardware constraints, affinity and anti-affinity rules, and taints and tolerations. Node affinity allows you to constrain which nodes a pod can be scheduled on based on node labels, while pod affinity and anti-affinity control scheduling based on the presence of other pods. Taints are applied to nodes to repel pods that do not have a matching toleration, which is commonly used to reserve nodes for specific workloads. If the scheduler cannot find a suitable node for a pod, the pod remains in a Pending state until a suitable node becomes available or the constraints are relaxed. Resource requests and limits also influence scheduling, since the scheduler avoids placing pods on nodes that lack sufficient available resources.",
-      "matched_score": 0.6539468765258789,
+      "matched_score": 0.6539468169212341,
       "retrieved_doc_ids": [
         "doc_009",
-        "doc_001",
-        "doc_007"
+        "doc_018",
+        "doc_015"
       ]
     },
     {
       "query": "Why can accuracy be a misleading metric when classes are imbalanced?",
       "expected_doc_id": "doc_010",
       "label": "SUCCESS",
-      "top_score": 0.6092489957809448,
+      "top_score": 0.6092488765716553,
       "matched_chunk_text": "Class imbalance occurs when one class significantly outnumbers another in a classification dataset, which can cause models to become biased toward predicting the majority class. Common techniques to address this include oversampling the minority class, undersampling the majority class, or generating synthetic samples using methods like SMOTE. Adjusting the class weights in the loss function is another effective approach, where misclassifying the minority class is penalized more heavily during training. Evaluation metrics also need careful consideration in imbalanced settings, since accuracy can be misleading; metrics like precision, recall, F1 score, and ROC-AUC provide a more complete picture of model performance. Stratified sampling should be used when splitting data into train and test sets to ensure both sets maintain the same class distribution as the original dataset.",
-      "matched_score": 0.6092489957809448,
+      "matched_score": 0.6092488765716553,
       "retrieved_doc_ids": [
         "doc_010",
-        "doc_008",
-        "doc_005"
+        "doc_016",
+        "doc_008"
       ]
     },
     {
       "query": "Why should I avoid rebasing commits that are already pushed to a shared branch?",
       "expected_doc_id": "doc_011",
       "label": "SUCCESS",
-      "top_score": 0.7036487460136414,
+      "top_score": 0.7036488056182861,
       "matched_chunk_text": "Git offers two primary strategies for integrating changes from one branch into another: merge and rebase. A merge creates a new commit that combines the histories of both branches, preserving the exact history of when and how changes were made, including any parallel work. A rebase, on the other hand, moves the entire branch to begin on the tip of another branch, effectively rewriting commit history to create a linear sequence of commits. Rebasing produces a cleaner, more readable project history but should be avoided on commits that have already been pushed to a shared branch, since it changes commit hashes and can cause conflicts for collaborators. Interactive rebase allows you to edit, squash, or reorder commits before they are applied, which is useful for cleaning up a messy commit history before merging a feature branch.",
-      "matched_score": 0.7036487460136414,
+      "matched_score": 0.7036488056182861,
       "retrieved_doc_ids": [
         "doc_011",
-        "doc_012",
-        "doc_002"
+        "doc_013",
+        "doc_012"
       ]
     },
     {
-      "query": "What is the cache-aside pattern in Redis?",
+      "query": "What is the cache-aside pattern and how does TTL prevent stale entries?",
       "expected_doc_id": "doc_012",
       "label": "SUCCESS",
-      "top_score": 0.727185070514679,
+      "top_score": 0.5434594750404358,
       "matched_chunk_text": "Redis is commonly used as a caching layer to reduce load on primary databases and improve application response times. The cache-aside pattern is one of the most common strategies: the application first checks Redis for the requested data, and if it is not found, the application queries the database and stores the result in Redis for future requests. Time-to-live values are typically set on cached entries to prevent stale data from persisting indefinitely. Write-through caching, in contrast, updates the cache at the same time as the database, ensuring consistency but adding latency to write operations. Cache invalidation remains one of the harder problems in caching, since determining exactly when cached data becomes stale often requires careful design around how and when underlying data changes.",
-      "matched_score": 0.727185070514679,
+      "matched_score": 0.5434594750404358,
       "retrieved_doc_ids": [
         "doc_012",
+        "doc_019",
+        "doc_013"
+      ]
+    },
+    {
+      "query": "Why does Memcached not support persistence or complex data structures like sorted sets?",
+      "expected_doc_id": "doc_013",
+      "label": "SUCCESS",
+      "top_score": 0.6656681299209595,
+      "matched_chunk_text": "Memcached is a simple, high-performance, distributed memory caching system originally designed to speed up dynamic web applications by reducing database load. Unlike Redis, Memcached stores data purely in memory with no persistence to disk, and it does not support complex data structures like sorted sets or hashes, only simple key-value pairs. Memcached distributes data across multiple servers using client-side consistent hashing, meaning the client library decides which server a given key belongs to. Because Memcached is multithreaded by design, it can take better advantage of multi-core machines for a single cache instance compared to Redis, which is largely single-threaded for command execution. Memcached is often chosen over Redis specifically when the use case is pure caching with no need for persistence, pub/sub, or advanced data types.",
+      "matched_score": 0.6656681299209595,
+      "retrieved_doc_ids": [
+        "doc_013",
+        "doc_020",
+        "doc_012"
+      ]
+    },
+    {
+      "query": "Why can a high connection pool size overwhelm a MySQL server despite pooling?",
+      "expected_doc_id": "doc_014",
+      "label": "SUCCESS",
+      "top_score": 0.7391113638877869,
+      "matched_chunk_text": "Connection pooling in MySQL reduces the overhead of repeatedly opening and closing database connections, which can be expensive due to TCP handshakes and authentication. MySQL itself does not include a built-in connection pooler in the traditional sense; instead, pooling is typically handled at the application layer using libraries like mysql2's pool feature in Node.js, or HikariCP in Java applications. HikariCP is widely regarded as one of the fastest connection pool implementations available, using a lightweight design that avoids unnecessary locking. A common misconfiguration is setting the pool size too high, which can overwhelm the MySQL server with more concurrent connections than it can efficiently handle, since MySQL's max_connections setting caps how many simultaneous connections the server will accept regardless of pool size on the client.",
+      "matched_score": 0.7391113638877869,
+      "retrieved_doc_ids": [
+        "doc_014",
+        "doc_002",
+        "doc_005"
+      ]
+    },
+    {
+      "query": "Why doesn't depends_on in Docker Compose guarantee a dependent service is fully ready?",
+      "expected_doc_id": "doc_015",
+      "label": "SUCCESS",
+      "top_score": 0.7444475293159485,
+      "matched_chunk_text": "Docker Compose allows you to define and run multi-container Docker applications using a single YAML configuration file, typically named docker-compose.yml. Each service defined in the file corresponds to a container, and Compose automatically creates a shared network so that services can communicate with each other using the service name as a hostname, similar to how a user-defined bridge network works with plain Docker. Compose is primarily intended for local development and testing environments rather than production orchestration, where tools like Kubernetes are more commonly used. The 'depends_on' field controls the startup order of services, but it does not wait for a service to be fully ready, only for the container to have started, which is a common source of race conditions when one service needs another to be fully initialized first.",
+      "matched_score": 0.7444475293159485,
+      "retrieved_doc_ids": [
+        "doc_015",
         "doc_003",
-        "doc_004"
+        "doc_001"
+      ]
+    },
+    {
+      "query": "How does Adam's bias-correction step counteract moving averages initialized at zero?",
+      "expected_doc_id": "doc_016",
+      "label": "SUCCESS",
+      "top_score": 0.6940140724182129,
+      "matched_chunk_text": "Adam is an optimization algorithm that combines ideas from momentum and adaptive learning rates to train neural networks more efficiently than plain gradient descent. It maintains two moving averages for each parameter: the first moment, which is an exponentially decaying average of past gradients, and the second moment, which is an exponentially decaying average of past squared gradients. These two estimates allow Adam to adapt the effective learning rate for each parameter individually, giving larger updates to parameters with small or infrequent gradients and smaller updates to parameters with large or frequent gradients. Adam also includes a bias-correction step early in training to counteract the fact that the moving averages are initialized at zero and are therefore biased toward zero during the first few updates. Despite its popularity, Adam can sometimes generalize worse than plain stochastic gradient descent with momentum on certain tasks, which is why some practitioners still prefer SGD for final fine-tuning stages.",
+      "matched_score": 0.6940140724182129,
+      "retrieved_doc_ids": [
+        "doc_016",
+        "doc_004",
+        "doc_006"
+      ]
+    },
+    {
+      "query": "Why does HNSW not require a training or clustering step before search, unlike IVF-based indices?",
+      "expected_doc_id": "doc_017",
+      "label": "SUCCESS",
+      "top_score": 0.6941111087799072,
+      "matched_chunk_text": "HNSW, or Hierarchical Navigable Small World graphs, is an algorithm for approximate nearest neighbor search that builds a multi-layer graph structure to enable fast search in high-dimensional vector spaces. Unlike FAISS's IVF-based indices, which rely on clustering the vector space into partitions, HNSW organizes vectors into a graph where each node is connected to its approximate nearest neighbors, and search proceeds by greedily traversing the graph from a random entry point in the top layer down to the bottom layer. HNSW generally achieves excellent recall and low latency without requiring a training or clustering step beforehand, unlike IVF-based FAISS indices which need to be trained on representative data first. The tradeoff is memory usage, since HNSW graphs typically require more memory per vector than compressed FAISS indices like IVFPQ. Libraries like hnswlib and Qdrant use HNSW as their core search algorithm.",
+      "matched_score": 0.6941111087799072,
+      "retrieved_doc_ids": [
+        "doc_017",
+        "doc_005",
+        "doc_020"
+      ]
+    },
+    {
+      "query": "How does a Kubernetes Service handle traffic when pod IPs are ephemeral?",
+      "expected_doc_id": "doc_018",
+      "label": "SUCCESS",
+      "top_score": 0.7732831239700317,
+      "matched_chunk_text": "A Kubernetes Service provides a stable network endpoint for a set of pods, since individual pod IP addresses are ephemeral and change whenever a pod is recreated. When a Service is created, Kubernetes assigns it a stable virtual IP address called a ClusterIP, and kube-proxy on each node configures networking rules so that traffic sent to that ClusterIP gets load-balanced across the pods matching the Service's label selector. This is different from Docker's default networking model, where containers typically communicate directly using container names resolved through an embedded DNS server, without any load-balancing layer in between. For exposing a Service outside the cluster, Kubernetes offers NodePort, which opens a specific port on every node, and LoadBalancer, which provisions an external load balancer from the cloud provider. Ingress resources provide a more flexible way to route external HTTP traffic to multiple Services based on hostname or path, without needing a separate LoadBalancer for each Service.",
+      "matched_score": 0.7732831239700317,
+      "retrieved_doc_ids": [
+        "doc_018",
+        "doc_009",
+        "doc_015"
+      ]
+    },
+    {
+      "query": "Why do asynchronous queue messages cause incomplete distributed traces?",
+      "expected_doc_id": "doc_019",
+      "label": "SUCCESS",
+      "top_score": 0.5050312876701355,
+      "matched_chunk_text": "As applications grow into dozens or hundreds of microservices, understanding why a single user request is slow becomes difficult because that request may pass through many services before completing. Distributed tracing solves this by assigning a unique trace ID to each incoming request, which gets propagated through HTTP headers to every downstream service the request touches. Each service records a span representing the work it performed, including a start time, duration, and any relevant metadata, and all spans sharing the same trace ID are later stitched together into a single timeline. This makes it possible to see exactly which service in a request's path introduced the most latency. One subtlety that often causes incomplete traces in production is that asynchronous processing, such as messages placed on a queue for later processing, requires manually propagating the trace context, since the automatic instrumentation that works for synchronous HTTP calls does not automatically follow messages through a queue. Popular tools in this space include Jaeger, Zipkin, and OpenTelemetry, with OpenTelemetry increasingly becoming the vendor-neutral standard for instrumentation across languages. Sampling is another important consideration: tracing every single request at high scale can be prohibitively expensive to store, so most production systems only trace a percentage of requests, though critical operations like checkout flows are often force-sampled at 100% regardless of the general sampling rate to ensure they are always debuggable.",
+      "matched_score": 0.5050312876701355,
+      "retrieved_doc_ids": [
+        "doc_019",
+        "doc_012",
+        "doc_013"
+      ]
+    },
+    {
+      "query": "Why can over-indexing a table slow down write-heavy workloads?",
+      "expected_doc_id": "doc_020",
+      "label": "LOW_CONFIDENCE",
+      "top_score": 0.45479363203048706,
+      "matched_chunk_text": "Most relational databases, including PostgreSQL and MySQL's InnoDB engine, use B-Tree indexes as the default index type because they perform well for both equality lookups and range queries. A B-Tree keeps its keys sorted and maintains a balanced structure where every leaf node is at the same depth, which guarantees that lookups, insertions, and deletions all complete in logarithmic time relative to the number of rows. When a query filters on a column that has a B-Tree index, the database can quickly narrow down the search instead of scanning every row in the table, an operation known as a sequential scan. However, indexes are not free: every insert or update on an indexed column requires the database to also update the index structure, which adds write overhead, and indexes consume additional disk space. A common mistake is over-indexing a table, adding indexes on columns that are rarely queried, which slows down write-heavy workloads without providing meaningful read performance benefits. Composite indexes, which span multiple columns, are most effective when the query's filter conditions match the same column order the index was created with.",
+      "matched_score": 0.45479363203048706,
+      "retrieved_doc_ids": [
+        "doc_020",
+        "doc_005",
+        "doc_012"
+      ]
+    },
+    {
+      "query": "Which caching system is multithreaded and can better use multi-core machines for a single instance?",
+      "expected_doc_id": "doc_013",
+      "label": "SUCCESS",
+      "top_score": 0.5941340923309326,
+      "matched_chunk_text": "Memcached is a simple, high-performance, distributed memory caching system originally designed to speed up dynamic web applications by reducing database load. Unlike Redis, Memcached stores data purely in memory with no persistence to disk, and it does not support complex data structures like sorted sets or hashes, only simple key-value pairs. Memcached distributes data across multiple servers using client-side consistent hashing, meaning the client library decides which server a given key belongs to. Because Memcached is multithreaded by design, it can take better advantage of multi-core machines for a single cache instance compared to Redis, which is largely single-threaded for command execution. Memcached is often chosen over Redis specifically when the use case is pure caching with no need for persistence, pub/sub, or advanced data types.",
+      "matched_score": 0.5941340923309326,
+      "retrieved_doc_ids": [
+        "doc_013",
+        "doc_012",
+        "doc_019"
+      ]
+    },
+    {
+      "query": "Which connection pool library is described as one of the fastest, using a lightweight low-locking design?",
+      "expected_doc_id": "doc_014",
+      "label": "SUCCESS",
+      "top_score": 0.5221089124679565,
+      "matched_chunk_text": "Connection pooling in MySQL reduces the overhead of repeatedly opening and closing database connections, which can be expensive due to TCP handshakes and authentication. MySQL itself does not include a built-in connection pooler in the traditional sense; instead, pooling is typically handled at the application layer using libraries like mysql2's pool feature in Node.js, or HikariCP in Java applications. HikariCP is widely regarded as one of the fastest connection pool implementations available, using a lightweight design that avoids unnecessary locking. A common misconfiguration is setting the pool size too high, which can overwhelm the MySQL server with more concurrent connections than it can efficiently handle, since MySQL's max_connections setting caps how many simultaneous connections the server will accept regardless of pool size on the client.",
+      "matched_score": 0.5221089124679565,
+      "retrieved_doc_ids": [
+        "doc_014",
+        "doc_002",
+        "doc_013"
+      ]
+    },
+    {
+      "query": "At what sampling rate are critical operations like checkout flows typically traced in production?",
+      "expected_doc_id": "doc_019",
+      "label": "LOW_CONFIDENCE",
+      "top_score": 0.4306929111480713,
+      "matched_chunk_text": "As applications grow into dozens or hundreds of microservices, understanding why a single user request is slow becomes difficult because that request may pass through many services before completing. Distributed tracing solves this by assigning a unique trace ID to each incoming request, which gets propagated through HTTP headers to every downstream service the request touches. Each service records a span representing the work it performed, including a start time, duration, and any relevant metadata, and all spans sharing the same trace ID are later stitched together into a single timeline. This makes it possible to see exactly which service in a request's path introduced the most latency. One subtlety that often causes incomplete traces in production is that asynchronous processing, such as messages placed on a queue for later processing, requires manually propagating the trace context, since the automatic instrumentation that works for synchronous HTTP calls does not automatically follow messages through a queue. Popular tools in this space include Jaeger, Zipkin, and OpenTelemetry, with OpenTelemetry increasingly becoming the vendor-neutral standard for instrumentation across languages. Sampling is another important consideration: tracing every single request at high scale can be prohibitively expensive to store, so most production systems only trace a percentage of requests, though critical operations like checkout flows are often force-sampled at 100% regardless of the general sampling rate to ensure they are always debuggable.",
+      "matched_score": 0.4306929111480713,
+      "retrieved_doc_ids": [
+        "doc_019",
+        "doc_007",
+        "doc_006"
+      ]
+    },
+    {
+      "query": "Which vector search approach uses graph traversal from a top-layer entry point down to the bottom layer?",
+      "expected_doc_id": "doc_017",
+      "label": "SUCCESS",
+      "top_score": 0.5018442869186401,
+      "matched_chunk_text": "HNSW, or Hierarchical Navigable Small World graphs, is an algorithm for approximate nearest neighbor search that builds a multi-layer graph structure to enable fast search in high-dimensional vector spaces. Unlike FAISS's IVF-based indices, which rely on clustering the vector space into partitions, HNSW organizes vectors into a graph where each node is connected to its approximate nearest neighbors, and search proceeds by greedily traversing the graph from a random entry point in the top layer down to the bottom layer. HNSW generally achieves excellent recall and low latency without requiring a training or clustering step beforehand, unlike IVF-based FAISS indices which need to be trained on representative data first. The tradeoff is memory usage, since HNSW graphs typically require more memory per vector than compressed FAISS indices like IVFPQ. Libraries like hnswlib and Qdrant use HNSW as their core search algorithm.",
+      "matched_score": 0.5018442869186401,
+      "retrieved_doc_ids": [
+        "doc_017",
+        "doc_020",
+        "doc_005"
       ]
     }
   ]
