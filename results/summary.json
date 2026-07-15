@@ -1,0 +1,30 @@
+{
+  "fixed_size": {
+    "total": 12,
+    "accuracy": 1.0,
+    "label_counts": {
+      "SUCCESS": 12
+    }
+  },
+  "fixed_overlap": {
+    "total": 12,
+    "accuracy": 1.0,
+    "label_counts": {
+      "SUCCESS": 12
+    }
+  },
+  "sentence_based": {
+    "total": 12,
+    "accuracy": 1.0,
+    "label_counts": {
+      "SUCCESS": 12
+    }
+  },
+  "whole_document": {
+    "total": 12,
+    "accuracy": 1.0,
+    "label_counts": {
+      "SUCCESS": 12
+    }
+  }
+}
