@@ -1,0 +1,50 @@
+[
+  {
+    "query": "How do containers on the same network find each other by name instead of IP?",
+    "expected_doc_id": "doc_001"
+  },
+  {
+    "query": "What is the difference between session pooling and transaction pooling in PgBouncer?",
+    "expected_doc_id": "doc_002"
+  },
+  {
+    "query": "How does FastAPI resolve dependencies that depend on other dependencies?",
+    "expected_doc_id": "doc_003"
+  },
+  {
+    "query": "What happens if the learning rate in gradient descent is too high?",
+    "expected_doc_id": "doc_004"
+  },
+  {
+    "query": "Which FAISS index type uses product quantization to save memory?",
+    "expected_doc_id": "doc_005"
+  },
+  {
+    "query": "How can I compare metrics across multiple training runs in MLflow?",
+    "expected_doc_id": "doc_006"
+  },
+  {
+    "query": "What algorithm refills tokens at a fixed rate to control API request limits?",
+    "expected_doc_id": "doc_007"
+  },
+  {
+    "query": "Why shouldn't I use raw BERT embeddings for cosine similarity search?",
+    "expected_doc_id": "doc_008"
+  },
+  {
+    "query": "How do taints and tolerations affect where a pod gets scheduled?",
+    "expected_doc_id": "doc_009"
+  },
+  {
+    "query": "Why can accuracy be a misleading metric when classes are imbalanced?",
+    "expected_doc_id": "doc_010"
+  },
+  {
+    "query": "Why should I avoid rebasing commits that are already pushed to a shared branch?",
+    "expected_doc_id": "doc_011"
+  },
+  {
+    "query": "What is the cache-aside pattern in Redis?",
+    "expected_doc_id": "doc_012"
+  }
+]
