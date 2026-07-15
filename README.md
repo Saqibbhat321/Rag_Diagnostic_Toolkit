@@ -107,6 +107,3 @@ rag-diagnostic-toolkit/
 
 Built by Saqib — exploring the internals of retrieval systems beyond the "build a RAG chatbot" tutorial level.
 
-## License
-
-MIT
